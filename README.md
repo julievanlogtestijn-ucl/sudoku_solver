@@ -1,24 +1,36 @@
-# 🧩 Sudoku Solver (Backtracking)
+# 🧩 Sudoku Solver (Backtracking + Forward Checking)
 
-This is a simple **Sudoku solver** written in **C#**, using the **backtracking algorithm**. You can input a Sudoku puzzle via the console, and the program will print the solved grid along with the execution time.
+This is a Sudoku solver written in **C#**, featuring two algorithms:
+
+- **Backtracking**
+- **Backtracking with Forward Checking**
+
+You can input a puzzle via the console and select which solving method to use. This project was built as part of a module for the BSc Articial Intelligence. 
+
+---
 
 ## 🚀 Features
 
-- Solves standard 9x9 Sudoku puzzles
-- Uses classic **backtracking algorithm**
-- Accepts user input via console
-- Displays formatted solution grid
-- Measures and prints execution time
+- Solves standard square Sudoku puzzles (standard setting is 9x9, can manually change size in code)
+- Choose between:
+  - Plain **Backtracking**
+  - **Backtracking with Forward Checking**
+- Console input interface
+- Outputs solved grid and execution time
 
-## 🛠 Requirements
+---
 
-- [.NET SDK](https://dotnet.microsoft.com/en-us/download) (version 6.0 or later)
-- Terminal / command line access
-- Optionally, [Visual Studio Code](https://code.visualstudio.com/) with the C# extension
+## 📦 Example run
 
-## 📦 Setup & Run
+You can copy and paste the below sudoku setup in the command line. Change 'f' to 'b' if you want backtracking instead of forward checking.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/sudoku-solver.git
-   cd sudoku-solver
+f 5 3 0 0 7 0 0 0 0 6 0 0 1 9 5 0 0 0 0 9 8 0 0 0 0 6 0 8 0 0 0 6 0 0 0 3 4 0 0 8 0 3 0 0 1 7 0 0 0 2 0 0 0 6 0 6 0 0 0 0 2 8 0 0 0 0 4 1 9 0 0 5 0 0 0 0 8 0 0 7 9
+
+📁 Project Structure
+
+SudokuSolver/
+├── Program.cs
+├── SudokuSolver.csproj
+├── .gitignore
+├── README.md
+
